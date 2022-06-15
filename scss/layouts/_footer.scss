@@ -1,0 +1,147 @@
+@use "../abstracts" as a;
+
+.footer {
+  padding: 2rem;
+  background-color: var(--neut__vdk-cyan);
+  color: var(--neut__vpale-blue);
+
+  &__newsletter {
+    & h3 {
+      color: var(--neut__vpale-blue);
+      padding: 3rem 0 0;
+      text-transform: uppercase;
+    }
+    & p {
+      font-size: 0.85rem;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    & input {
+      margin: 2rem 0 1rem;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__about {
+    & > img {
+      width: 14rem;
+      margin-bottom: 1rem;
+    }
+
+    & > p {
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+  }
+
+  &__phone,
+  &__email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__phone p,
+  &__email p {
+    padding-top: 1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    margin: 2rem 0 1rem;
+
+    & a {
+      color: var(--neut__vpale-blue);
+      font-size: 2rem;
+
+      &:hover {
+        color: hsla(192, 95%, 76%, 0.904);
+      }
+    }
+  }
+
+  @include a.desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    // padding: 0 10rem;
+
+    &__newsletter {
+      width: 40%;
+
+      & p {
+        width: 70%;
+      }
+
+      & form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & input {
+          margin: 1rem 0;
+          width: 55%;
+          padding: 1rem;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+
+    &__about-wrapper {
+      width: 30%;
+    }
+
+    &__about {
+      & > p {
+        font-size: 0.8rem;
+        width: 80%;
+      }
+    }
+
+    &__email {
+      margin-top: -0.7rem;
+    }
+
+    .social-icons {
+      margin: 3rem 0 1rem;
+
+      & a {
+        margin-right: 0.8rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.footer-curve {
+  background: url(/images/bg-footer-top-mobile.svg) no-repeat bottom
+    center/cover;
+  padding: 3rem;
+
+  @include a.desktop {
+    background: url(/images/bg-footer-top-desktop.svg) no-repeat bottom
+      center/contain;
+    padding: 6rem;
+  }
+}
+
+.attribution {
+  height: 3rem;
+  padding: 1rem 0;
+  background: hsla(192, 65%, 19%, 0.507);
+
+  & p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  & a {
+    color: var(--neut__vpale-blue);
+  }
+}

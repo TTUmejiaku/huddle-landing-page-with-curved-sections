@@ -1,0 +1,18 @@
+@use "../abstracts" as a;
+
+.banner {
+  padding: 0 2rem;
+  text-align: center;
+
+  & h2 {
+    font-size: 1.5rem;
+  }
+
+  @include a.desktop {
+    padding: 4rem 0;
+
+    & h2 {
+      font-size: 2rem;
+    }
+  }
+}

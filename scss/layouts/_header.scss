@@ -1,0 +1,21 @@
+@use "../abstracts" as a;
+
+.header {
+  padding: 2rem 2rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    width: 7rem;
+  }
+
+  @include a.desktop {
+    padding: 0 10rem;
+    margin: 5rem 0 13rem;
+
+    &__img {
+      width: 15rem;
+    }
+  }
+}
