@@ -96,7 +96,7 @@
 
     @include a.desktop {
       background: url(/images/bg-section-top-desktop-1.svg) no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
       background-position: bottom center;
       padding: 6rem;
     }
@@ -109,7 +109,7 @@
 
     @include a.desktop {
       background: url(/images/bg-section-bottom-desktop-1.svg) no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
       background-position: top center;
       padding: 6rem;
     }
@@ -195,7 +195,7 @@
 
     @include a.desktop {
       background: url(/images/bg-section-top-desktop-2.svg) no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
       background-position: bottom center;
       padding: 6rem;
     }
@@ -243,7 +243,7 @@
 
     @include a.desktop {
       background: url(/images/bg-section-bottom-desktop-2.svg) no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
       background-position: top center;
       padding: 6rem;
     }
